@@ -27,7 +27,7 @@ if not GEMINI_API_KEY or GEMINI_API_KEY == "your_gemini_api_key_here":
 # ---------------------------------------------------------------------------
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-DEFAULT_MODEL = "gemini-2.0-flash"
+DEFAULT_MODEL = "gemini-2.5-flash"
 
 # ---------------------------------------------------------------------------
 # Community types
