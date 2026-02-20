@@ -1,5 +1,5 @@
 """
-HangHive AI — Summarizer Module
+HANG — Summarizer Module
 Summarizes conversations and topics using Google Gemini.
 """
 
@@ -77,7 +77,7 @@ def summarize_messages(messages: list) -> str:
             model=DEFAULT_MODEL,
             contents=prompt,
             config=types.GenerateContentConfig(
-                system_instruction="You are HangHive AI. Provide concise, accurate summaries.",
+                system_instruction="You are HANG. Provide concise, accurate summaries.",
                 temperature=0.3,
                 max_output_tokens=512,
             ),
@@ -120,7 +120,7 @@ def summarize_topic(topic: str, messages: list) -> str:
             model=DEFAULT_MODEL,
             contents=prompt,
             config=types.GenerateContentConfig(
-                system_instruction="You are HangHive AI. Provide concise, topic-focused summaries.",
+                system_instruction="You are HANG. Provide concise, topic-focused summaries.",
                 temperature=0.3,
                 max_output_tokens=512,
             ),

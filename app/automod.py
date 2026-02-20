@@ -1,5 +1,5 @@
 """
-HangHive AI — Auto-Moderation Module
+HANG — Auto-Moderation Module
 Automatically detects toxic, spam, and inappropriate messages.
 """
 

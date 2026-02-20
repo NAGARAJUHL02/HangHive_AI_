@@ -1,5 +1,5 @@
 """
-HangHive AI — Discord Bot (main.py)
+HANG — Discord Bot (main.py)
 Discord bot entry point with AI chat, auto-moderation, and moderation commands.
 Run: py app/main.py
 """
@@ -47,7 +47,7 @@ _BUFFER_SIZE = 50
 async def on_ready():
     """Called when the bot is connected and ready."""
     print(f"{'='*50}")
-    print(f"  HangHive AI is online!")
+    print(f"  HANG is online!")
     print(f"  Logged in as: {bot.user.name} ({bot.user.id})")
     print(f"  Servers: {len(bot.guilds)}")
     print(f"{'='*50}")
@@ -119,10 +119,10 @@ async def on_message(message: discord.Message):
 # Slash Commands — AI Chat
 # ---------------------------------------------------------------------------
 
-@bot.tree.command(name="ask", description="Ask HangHive AI a question")
-@app_commands.describe(question="Your question for HangHive AI")
+@bot.tree.command(name="ask", description="Ask HANG a question")
+@app_commands.describe(question="Your question for HANG")
 async def ask(interaction: discord.Interaction, question: str):
-    """Ask HangHive AI a question."""
+    """Ask HANG a question."""
     await interaction.response.defer(thinking=True)
 
     channel_id = str(interaction.channel_id)
@@ -143,7 +143,7 @@ async def ask(interaction: discord.Interaction, question: str):
         description=reply,
         color=discord.Color.blue()
     )
-    embed.set_author(name="HangHive AI", icon_url=bot.user.avatar.url if bot.user.avatar else None)
+    embed.set_author(name="HANG", icon_url=bot.user.avatar.url if bot.user.avatar else None)
     embed.set_footer(text=f"Asked by {interaction.user.display_name}")
 
     await interaction.followup.send(embed=embed)
@@ -348,5 +348,5 @@ if __name__ == "__main__":
         print("=" * 50)
         sys.exit(1)
 
-    print("Starting HangHive AI Discord bot...")
+    print("Starting HANG Discord bot...")
     bot.run(DISCORD_BOT_TOKEN)

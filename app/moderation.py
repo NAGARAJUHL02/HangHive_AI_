@@ -1,5 +1,5 @@
 """
-HangHive AI — Moderation Commands Module
+HANG — Moderation Commands Module
 Handles manual moderation actions: warn, mute, kick, ban.
 Designed for use with discord.py but keeps logic decoupled.
 """

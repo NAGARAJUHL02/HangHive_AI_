@@ -1,1 +1,1 @@
-# HangHive AI — App Package
+# HANG — App Package

@@ -1,5 +1,5 @@
 """
-HangHive AI — Utilities & Configuration
+HANG — Utilities & Configuration
 Shared helpers, config loading, and Gemini client initialization.
 """
 
@@ -112,10 +112,10 @@ def format_response(text: str) -> str:
     # Strip leading/trailing whitespace
     text = text.strip()
 
-    # Remove any "HangHive AI:" prefix the model might add
+    # Remove any "HANG:" prefix the model might add
     prefixes_to_remove = [
-        "HangHive AI:",
-        "HangHive AI :",
+        "HANG:",
+        "HANG :",
         "Assistant:",
         "Bot:",
     ]

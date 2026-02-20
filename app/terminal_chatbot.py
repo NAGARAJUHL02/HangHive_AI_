@@ -1,5 +1,5 @@
 """
-HangHive AI — Terminal Chatbot
+HANG — Terminal Chatbot
 Interactive terminal interface for testing the chatbot locally.
 Run: py app/terminal_chatbot.py
 """
@@ -21,7 +21,7 @@ from app.automod import check_message
 
 BANNER = """
 ╔══════════════════════════════════════════════════════╗
-║              🟢  HangHive AI — Terminal              ║
+║                    🟢  HANG — Terminal               ║
 ║          Your smart community assistant              ║
 ╚══════════════════════════════════════════════════════╝
 """
@@ -70,7 +70,7 @@ def main():
     community_type = select_community_type()
     conversation_history = []
 
-    print(f"\nYou can now chat with HangHive AI ({community_type} mode).")
+    print(f"\nYou can now chat with HANG ({community_type} mode).")
     print("Type 'quit' or 'exit' to stop.\n")
     print("-" * 50)
 
@@ -101,7 +101,7 @@ def main():
             continue
 
         # Generate AI reply
-        print("\n🤖 HangHive AI: Thinking...")
+        print("\n🤖 HANG: Thinking...")
 
         # Add user message to history
         conversation_history.append({
@@ -123,7 +123,7 @@ def main():
         })
 
         # Clear "Thinking..." and print response
-        print(f"\033[A\033[K🤖 HangHive AI: {reply}")
+        print(f"\033[A\033[K🤖 HANG: {reply}")
 
 
 def handle_command(command: str, community_type: str):

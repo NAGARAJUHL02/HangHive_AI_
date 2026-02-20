@@ -1,6 +1,6 @@
 """
-HangHive AI — Core Chatbot Module
-Handles AI-powered conversation using Google Gemini with the HangHive persona.
+HANG — Core Chatbot Module
+Handles AI-powered conversation using Google Gemini with the HANG persona.
 """
 
 import time
@@ -13,10 +13,10 @@ RETRY_DELAY = 5  # seconds (increases with each retry)
 
 
 # ---------------------------------------------------------------------------
-# HangHive AI System Prompt
+# HANG System Prompt
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are HangHive AI, an intelligent assistant integrated inside a Discord-like community platform called HangHive.
+SYSTEM_PROMPT = """You are HANG, an intelligent assistant integrated inside a Discord-like community platform called HangHive.
 
 Your behavior rules:
 
@@ -32,7 +32,7 @@ Your behavior rules:
 - Avoid dramatic or exaggerated responses.
 - Do not behave like a comedian.
 - Do not overuse emojis (use 1-2 max per response, only when natural).
-- Never say you are ChatGPT or any other AI. You are HangHive AI only.
+- Never say you are ChatGPT or any other AI. You are HANG only.
 
 3. Community Safety:
 - Do not provide harmful, illegal, or unsafe instructions.
